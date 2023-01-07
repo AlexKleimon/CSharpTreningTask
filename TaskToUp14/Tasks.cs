@@ -22,5 +22,17 @@ class Tasks
         int number2 = MyMethods.InputNumberInt();
         MyMethods.ChekingSquareNumber(number1, number2);
     }
+    /// <summary>
+    ///  Задача 2. Даны два числа. Показать большее и меньшее число.
+    /// </summary>
+    public static void Task2()
+    {
+        Console.WriteLine("Задача 2. Даны два числа. Показать большее и меньшее число.");
+        Console.WriteLine("Введите первое число:");
+        int number1 = MyMethods.InputNumberInt();
+        Console.WriteLine("Введите второе число:");
+        int number2 = MyMethods.InputNumberInt();
+        MyMethods.MinMaxNumbers(number1, number2);
+    }
 
 }
