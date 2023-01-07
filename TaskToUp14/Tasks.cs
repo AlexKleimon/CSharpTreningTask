@@ -34,5 +34,19 @@ class Tasks
         int number2 = MyMethods.InputNumberInt();
         MyMethods.MinMaxNumbers(number1, number2);
     }
+    /// <summary>
+    ///  Задача 3. По заданному номеру дня недели вывести его название.
+    /// </summary>
+    public static void Task3()
+    {
+        Console.WriteLine("Задача 3. По заданному номеру дня недели вывести его название.");
+        int number1 = 0;
+        while (number1 > 7 || number1 < 1)
+        {
+            Console.WriteLine("Введите номер дня недели (1...7):");
+            number1 = MyMethods.InputNumberInt();
+        }
+        MyMethods.DayWeek(number1);
+    }
 
 }
