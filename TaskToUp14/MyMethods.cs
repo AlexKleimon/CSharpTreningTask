@@ -19,4 +19,15 @@ class MyMethods
     {
         return number * number;
     }
+    /// <summary>
+    /// Метод проверяет, является ли первое число квадратом второго.
+    /// </summary>
+    /// <param name="number1">Первое число.</param>
+    /// <param name="number2">Второе число.</param>
+    public static void ChekingSquareNumber(int number1, int number2)
+    {
+        if (number1 == number2 * number2)
+            Console.WriteLine($"Число {number1} является квадратом числа {number2}.");
+        else Console.WriteLine($"Число {number1} не является квадратом числа {number2}.");
+    }
 }
