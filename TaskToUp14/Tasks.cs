@@ -48,5 +48,20 @@ class Tasks
         }
         MyMethods.DayWeek(number1);
     }
+    /// <summary>
+    /// Задача 4. Найти максимальное из трех чисел.
+    /// </summary>
+    public static void Task4()
+    {
+        Console.WriteLine("Задача 4. Найти максимальное из трех чисел.");
+        Console.WriteLine("Введите первое число:");
+        int number1 = MyMethods.InputNumberInt();
+        Console.WriteLine("Введите второе число:");
+        int number2 = MyMethods.InputNumberInt();
+        Console.WriteLine("Введите третее число:");
+        int number3 = MyMethods.InputNumberInt();
+        int max = MyMethods.MaxThreeNumbers(number1, number2, number3);
+        Console.WriteLine($"Среди трех чисел максимальным является: {max}.");
+    }
 
 }
