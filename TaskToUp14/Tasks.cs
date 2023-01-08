@@ -63,5 +63,15 @@ class Tasks
         int max = MyMethods.MaxThreeNumbers(number1, number2, number3);
         Console.WriteLine($"Среди трех чисел максимальным является: {max}.");
     }
+    /// <summary>
+    /// Задача 5. Написать программу вычисления значения функции y = sin(x).
+    /// </summary>
+    public static void Task5()
+    {
+        Console.WriteLine("Задача 5. Написать программу вычисления значения функции y = sin(x).");
+        Console.WriteLine("Введите значение аргумента функции sin(x):");
+        int x = MyMethods.InputNumberInt();
+        Console.WriteLine($"Значение функции sin( {x} ) равно {MyMethods.MathSin(x)}.");
+    }
 
 }

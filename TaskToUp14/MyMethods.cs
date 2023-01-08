@@ -69,4 +69,13 @@ class MyMethods
         if (max<number3) max = number3;
         return max;
     }
+    /// <summary>
+    /// Метод вычисления sin(x).
+    /// </summary>
+    /// <param name="value">Аргумент функции (угол в радианах).</param>
+    /// <returns>Значение sin(x).</returns>
+    public static double MathSin(double value)
+    {
+        return Math.Sin(value);
+    }
 }
