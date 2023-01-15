@@ -89,4 +89,15 @@ class MyMethods
         else
             Console.WriteLine($"Число {number} является нечётным.");
     }
+    public static void OutputNumbers(int number)
+    {
+        string numbers = string.Empty;
+        int count = -number;
+        while (count <= number)
+        {
+            numbers += $"{count,-5}";
+            count++;
+        }
+        Console.WriteLine($"Последовательность чисел от -N до N: {numbers}");
+    }
 }

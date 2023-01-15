@@ -83,5 +83,15 @@ class Tasks
         int number = MyMethods.InputNumberInt();
         MyMethods.ParityCheck(number);
     }
+    /// <summary>
+    /// Задача 7. Показать числа от -N до N.
+    /// </summary>
+    public static void Task7()
+    {
+        Console.WriteLine("Задача 7. Показать числа от -N до N.");
+        Console.Write("Введите число N: ");
+        int N = MyMethods.InputNumberInt();
+        MyMethods.OutputNumbers(N);
+    }
 
 }
