@@ -89,6 +89,10 @@ class MyMethods
         else
             Console.WriteLine($"Число {number} является нечётным.");
     }
+    /// <summary>
+    /// Метод вывода последовательности чисел типа int от -N до N.
+    /// </summary>
+    /// <param name="number">Число N.</param>
     public static void OutputNumbers(int number)
     {
         string numbers = string.Empty;
