@@ -73,5 +73,15 @@ class Tasks
         int x = MyMethods.InputNumberInt();
         Console.WriteLine($"Значение функции sin( {x} ) равно {MyMethods.MathSin(x)}.");
     }
+    /// <summary>
+    /// Задача 6. Выяснить является ли число чётным.
+    /// </summary>
+    public static void Task6()
+    {
+        Console.WriteLine("Задача 6. Выяснить является ли число чётным.");
+        Console.Write("Введите число: ");
+        int number = MyMethods.InputNumberInt();
+        MyMethods.ParityCheck(number);
+    }
 
 }

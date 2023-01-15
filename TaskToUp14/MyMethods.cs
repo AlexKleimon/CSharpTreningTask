@@ -62,11 +62,11 @@ class MyMethods
     /// <param name="number2">Второе число.</param>
     /// <param name="number3">Третее число.</param>
     /// <returns>Максимальное число.</returns>
-    public static int MaxThreeNumbers (int number1, int number2, int number3)
+    public static int MaxThreeNumbers(int number1, int number2, int number3)
     {
         int max = number1;
-        if(max<number2) max = number2;
-        if (max<number3) max = number3;
+        if (max < number2) max = number2;
+        if (max < number3) max = number3;
         return max;
     }
     /// <summary>
@@ -77,5 +77,16 @@ class MyMethods
     public static double MathSin(double value)
     {
         return Math.Sin(value);
+    }
+    /// <summary>
+    /// Метод проверки числа типа int на чётность.
+    /// </summary>
+    /// <param name="number">Число типа int.</param>
+    public static void ParityCheck(int number)
+    {
+        if (number % 2 == 0)
+            Console.WriteLine($"Число {number} является чётным.");
+        else
+            Console.WriteLine($"Число {number} является нечётным.");
     }
 }
