@@ -93,5 +93,15 @@ class Tasks
         int N = MyMethods.InputNumberInt();
         MyMethods.OutputNumbers(N);
     }
+    /// <summary>
+    /// Задача 8. Показать четные числа от 1 до N.
+    /// </summary>
+    public static void Task8()
+    {
+        Console.WriteLine("Задача 8. Показать четные числа от 1 до N.");
+        Console.WriteLine("Введите число N:");
+        int N = MyMethods.InputNumberInt();
+        MyMethods.OutputEvenNumbers(N);
+    }
 
 }

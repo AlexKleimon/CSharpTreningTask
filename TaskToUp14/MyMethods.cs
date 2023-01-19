@@ -104,4 +104,20 @@ class MyMethods
         }
         Console.WriteLine($"Последовательность чисел от -N до N: {numbers}");
     }
+    /// <summary>
+    ///  Метод вывода последовательности четных чисел типа int от 1 до N.
+    /// </summary>
+    /// <param name="number">Число N.</param>
+    public static void OutputEvenNumbers(int number)
+    {
+        string numbers = string.Empty;
+        int count = 1;
+        while (count <= number)
+        {
+            if (count % 2 == 0)
+                numbers += $"{count,-5}";
+            count++;
+        }
+        Console.WriteLine($"Последовательность чисел от 1 до N: {numbers}");
+    }
 }
