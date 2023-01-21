@@ -120,4 +120,22 @@ class MyMethods
         }
         Console.WriteLine($"Последовательность чисел от 1 до N: {numbers}");
     }
+    /// <summary>
+    /// Метод ввода трехзначного числа типа int.
+    /// </summary>
+    /// <returns>Трехзначное число.</returns>
+    public static int InputNumberThreeInt()
+    {
+        bool mark;
+        while (true)
+        {
+            string number = Console.ReadLine();
+            mark = int.TryParse(number, out int result);
+            if (result < 1000 && result > 99 && mark)
+            {
+                return result;
+            }
+            Console.Write("Неверный ввод данных. Повторите попытку.\nВведите трёхзначное число: ");
+        }
+    }
 }

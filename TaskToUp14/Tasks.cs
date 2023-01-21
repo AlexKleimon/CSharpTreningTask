@@ -99,9 +99,17 @@ class Tasks
     public static void Task8()
     {
         Console.WriteLine("Задача 8. Показать четные числа от 1 до N.");
-        Console.WriteLine("Введите число N:");
+        Console.Write("Введите число N:");
         int N = MyMethods.InputNumberInt();
         MyMethods.OutputEvenNumbers(N);
+    }
+    // Задача 9. Показать последнюю цифру трёхзначного числа.
+    public static void Task9()
+    {
+        Console.WriteLine("Задача 9. Показать последнюю цифру трёхзначного числа.");
+        Console.Write("Введите трёхзначное число: ");
+        int number = MyMethods.InputNumberThreeInt() % 10;
+        Console.WriteLine($"Последняя цифра трёхзначного числа: {number}.");
     }
 
 }
