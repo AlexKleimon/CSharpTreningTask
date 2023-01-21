@@ -103,13 +103,26 @@ class Tasks
         int N = MyMethods.InputNumberInt();
         MyMethods.OutputEvenNumbers(N);
     }
-    // Задача 9. Показать последнюю цифру трёхзначного числа.
+    /// <summary>
+    /// Задача 9. Показать последнюю цифру трёхзначного числа.
+    /// </summary>
     public static void Task9()
     {
         Console.WriteLine("Задача 9. Показать последнюю цифру трёхзначного числа.");
         Console.Write("Введите трёхзначное число: ");
-        int number = MyMethods.InputNumberThreeInt() % 10;
-        Console.WriteLine($"Последняя цифра трёхзначного числа: {number}.");
+        int result = MyMethods.InputNumberThreeInt() % 10;
+        Console.WriteLine($"Последняя цифра трёхзначного числа: {result}.");
+    }
+    /// <summary>
+    /// Задача 10. Показать вторую цифру трёхзначного числа.
+    /// </summary>
+    public static void Task10()
+    {
+        Console.WriteLine("Задача 10. Показать вторую цифру трёхзначного числа.");
+        Console.Write("Введите трёхзначное число: ");
+        int number = MyMethods.InputNumberThreeInt();
+        int result = (number % 100) / 10;
+        Console.WriteLine($"Последняя цифра трёхзначного числа: {result}.");
     }
 
 }
