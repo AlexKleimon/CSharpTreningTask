@@ -124,5 +124,17 @@ class Tasks
         int result = (number % 100) / 10;
         Console.WriteLine($"Последняя цифра трёхзначного числа: {result}.");
     }
+    /// <summary>
+    /// Задача 11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа.
+    /// </summary>
+    public static void Task11()
+    {
+        Console.WriteLine("Задача 11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа.");
+        int number = Random.Shared.Next(10, 100);
+        Console.WriteLine("Случайное число из отрезка [10,99]: {0}.", number);
+        int oneNumber = number / 10;
+        int twoNumber = number % 10;
+        MyMethods.MinMaxNumbers(oneNumber, twoNumber);
+    }
 
 }
